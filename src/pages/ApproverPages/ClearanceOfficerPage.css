@@ -1,0 +1,109 @@
+.approver-body {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.approver-page {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.approver-left-panel {
+    flex: 1;
+    align-items: center;
+    
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info #site-name {
+    display: flex;
+    background-color: #517AA9;
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0 20px;
+    border-radius: 10px;
+}
+
+.info #welcome {
+    border-radius: 10px;
+    margin: 0px 0 20px;
+    color: #364958;
+    line-height: 25px;
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 300px;
+    height: 100px;
+    justify-content: center;
+    align-items: baseline;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.info #welcome #user-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.approver-right-panel {
+    flex: 2;
+    align-content: center;
+}
+
+#approver-view-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    width: 700px;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+#approver-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7F7F7;
+    width: 550px;
+    height: 50px;
+    padding: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    border: 1px solid #dddfe2;
+    box-sizing: border-box;
+}
+
+#approver-view-adviser {
+    background-color: #FFF;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    gap: 20px;  
+}

@@ -1,0 +1,498 @@
+html, body {
+    margin:0;
+    padding:0;
+}
+
+/* Navigation Bar */
+.navigation-bar{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: #517AA9;
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    gap: 10px;
+    margin-top: -50px;
+}
+
+.navigation-bar img{
+    height: 40px;
+    margin-right: auto;
+}
+
+/* Navigation Bar - Logout Button */
+.navigation-bar button{
+    height: 30px;
+    background-color: white;
+    border-style: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navigation-bar button:hover{
+    background-color: #829CBC;
+    color: white;
+}
+
+/* Admin - Whole Page */
+
+.admin-home{
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-body{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+/* Site Name and Page Name */
+#site-name, #admin-panel{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #517AA9;
+
+    width: 20vw;
+    height: 50px;
+
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    
+    border-radius: 10px;
+    
+}
+
+#admin-panel{
+    width: 51vw;
+}
+
+/* Admin Sidebar */
+.admin-left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: start;
+    align-items: center;
+}
+
+/* Welcome Container */
+#welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    
+    background-color: white;
+    width: 20vw;
+    height: 120px;
+    
+    margin: 0px 0 20px;
+    color: #364958;
+    line-height: 25px;
+
+    padding: 30px;
+    
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+#welcome #user-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* Admin Sidebar - Buttons */
+.admin-left-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Admin Sidebar - Buttons (Default) */
+.admin-left-buttons button, .edit-buttons button{
+    cursor: grab;
+    background-color: white;
+    color: #517AA9;
+
+    width: 20vw;
+    height: 40px;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    border: none;
+
+    font-weight: bold;
+    font-size: 16px;
+
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Admin Sidebar - Buttons (Active) */
+.admin-left-buttons #active, .edit-buttons input, .admin-right-buttons button:hover{
+    background-color: #517AA9;
+    color: white;
+}
+
+/* Admin Sidebar - Buttons (Hover) */
+.admin-left-buttons button:hover, .edit-buttons input:hover, .edit-buttons button:hover, .sign-up input:hover {
+    cursor: pointer;
+    background-color: #829CBC;
+    color: white;
+}
+
+/* Admin Contents */
+.admin-right{
+    flex: 2;
+    
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+/* Admin Navigation Buttons */
+.admin-right-buttons{
+    display: flex;
+    flex-direction: row;
+
+    gap: 15px;
+}
+
+/* Admin Navigation Button - Default */
+#admin-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 30px;
+    width: 25vw;
+
+    background-color: white;
+    
+    font-weight: bold;
+    
+    border-radius: 10px;
+}
+
+#link {
+    text-decoration: none;
+    color: #517AA9;;
+}
+
+/* Admin Navigation Button - Active */
+
+#active-link {
+    text-decoration: none;
+    color: white;
+}
+
+#admin-link.active-link {
+    background-color: #517AA9;
+    /* width: auto; */
+}
+
+#admin-link.active-link:hover {
+    background-color: #517AA9;
+}
+
+#admin-link:hover {
+    cursor: pointer;
+    background-color: #829CBC;
+    text-decoration: none;
+    color: white;
+}
+
+/* Admin Manage Students - Student Account Applications */
+
+.student-requests, .approver-accounts{
+    width: 51vw;
+    height: 90px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    
+}
+
+/* Admin Manage Students - View Verified Student Accounts */
+.student-requests#verified-students{
+    height:110px;
+}
+
+.stud-reqs, .app-accs{
+    overflow: scroll;
+    height: 350px;
+
+}
+
+#application-button{
+    width: 20vw !important; 
+}
+
+.admin-left-upload-button{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Dropdown for Adding Advisers */
+.student-requests select{
+    border-style: none;
+    background: #829CBC;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.student-requests option{
+    font-weight: bold;
+    padding: 10px;
+}
+
+.student-info, .approver-info{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Buttons */
+.admin-right-buttons input, .admin-right-buttons button{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+.admin-right-buttons button{
+    height: 40px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Informations */
+.student-info, .approver-info {
+    /* width: 210px; */
+    font-size: 18px;
+    color: #364958;
+    font-weight: bold;
+    margin-right: auto;
+    overflow: ellipsis;
+}
+
+.student-buttons, .approver-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.res-button, .admin-right-buttons button{
+    background: #829CBC;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    /* font-size: 15px; */
+}
+
+.upload-csv #browse{
+    width: 80px;
+    /* margin-left: auto; */
+}
+
+.res-button:hover {
+    cursor: pointer;
+    background-color: #517AA9;
+    text-decoration: none;
+}
+
+.sorting{
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 10px; 
+    /* position: sticky bottom; */
+} 
+
+.sorting button{
+    background: #829CBC;
+    border-radius: 10px;
+    padding: 10px;
+    width: 140px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.sorting h3{
+    font-size: 15px;
+    color: #364958;
+}
+
+.sorting button:hover{
+    cursor: pointer;
+    background-color: #517AA9;
+}
+
+/* For scalability */
+@media screen and (max-width: 1150px) {
+
+    .admin-body{
+        display: flex;
+        flex-direction: column;
+        gap: 30%;
+    }
+
+    .admin-left{
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+        gap: 5%
+    }
+
+    .admin-right{
+        align-items: center;
+    }
+
+    #admin-panel{
+        width: 80%;
+    }
+
+    #admin-link{
+        width: 35.55vw;
+    }
+
+    .student-requests, .approver-accounts{
+        width:71vw;
+        overflow: scroll;
+    }
+
+    .stud-reqs, .app-accs{
+        height: 200px;
+    }
+
+    .sorting{
+        justify-content: center;
+    }
+
+    .site-name{
+        margin: 0px 0 -20px;
+    }
+
+}    
+
+#csv, #searching-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 300px;
+    background-color: white;
+    height: 250px;
+    border-radius: 10px;
+    gap:10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+#searching-app{
+    height: 300px;
+}
+
+.uploading-csv span{
+    /* margin-left: 10px; */
+    margin-right: 17px;
+}
+
+.upload-csv, .create-acc, .search-app{
+    margin-top: 40px;
+}
+
+.create-form{
+    width: 700px;
+    align-items: none;
+}
+
+.sign-up#approver-form{
+    margin-right: auto;
+    margin-left: -20px;
+}
+
+.edit-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.edit-buttons button{
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0 4px 4px rgba(2, 2, 2, 0.25);
+    border-radius: 15px;
+    width: 200px;
+}
+
+#approver-form{
+    padding-left: 25%;
+}
+
+.close-application-button{
+    width: 250px !important;
+    background-color: #829CBC !important;
+}
+
+
+
+.uploading-csv input[type=file]{
+    display: none;
+}
+
+.uploaded-files{
+    flex: 2;
+}
+
+.uploading-csv{
+    display: flex;
+    flex-direction: row;
+    padding: 0 5% 5% 10%;
+}
+
+.uploading-csv button{
+    flex: 1;
+    height: 40px;
+    margin-right: 10px !important;
+}
+
+
+
+
+
+
+

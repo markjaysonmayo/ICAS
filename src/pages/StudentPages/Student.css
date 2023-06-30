@@ -1,0 +1,438 @@
+.student-body {
+    width: 100vw;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.student-page {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center;
+    justify-content: center;
+    gap: 100px;
+
+}
+
+.left-panel {
+    flex: 1;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info #site-name {
+    display: flex;
+    background-color: #517AA9;
+    width: 20vw !important;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.info #welcome {
+    border-radius: 10px;
+    color: #364958;
+    line-height: 25px;
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 20vw !important;
+    height: 100px;
+    justify-content: center;
+    align-items: baseline;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.info #welcome #user-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.right-panel {
+    flex: 2;
+    align-content: center;
+}
+
+.all-applications {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    align-content: left;
+    text-align: left;
+}
+
+
+#application {
+    width: 700px;
+    height: 90px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#app-id {
+    width: 210px;
+    font-size: 18px;
+    color: #364958;
+    font-weight: bold;
+}
+
+#app-status, #app-step, #print{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+    gap: 7px;
+    color: #364958;
+    font-weight: 800;
+}
+
+#open-apps {
+    background-color: #F7F7F7;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    color: #517AA9;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#status, #step {
+    background-color: #F7F7F7;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    color: #517AA9;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#application-button, .close-application-button {
+    cursor: grab;
+    background-color: #517AA9;
+    color: white;
+    width: 300px;
+    height: 40px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#step {
+    background-color: #F7F7F7;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    color: #517AA9;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#print-pdf {
+    background-color: #829CBC;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    border: none;
+}
+
+#print-pdf:hover, #close-app:hover {
+    background-color: #517AA9;
+    cursor: pointer;
+}
+
+#pending-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+#close, #resubmit {
+    display: flex;
+    background-color: #829CBC;
+    height: 37px;
+    width: 37px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+
+}
+
+#close:hover, #resubmit:hover {
+    background-color: #517AA9;
+    cursor: pointer;
+}
+
+#close img, #resubmit img{
+    height: 20px;
+    width: 20px;
+}
+
+
+#application-button, .close-application-button, .navigation-button {
+    background-color: #517AA9;
+    display: flex;
+    color: white;
+    width: 20vw;
+    height: 40px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.submit-application-button {
+    cursor: grab;
+    background-color: #829CBC;
+    color: white;
+    width: 250px;
+    height: 40px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#application-button:hover,  .submit-application-button:hover, .close-application-button:hover{
+    background-color: #486b94 !important;
+}
+
+.new-application {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#add-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 300px;
+    background-color: white;
+    height: 150px;
+    border-radius: 10px;
+
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+.app-input{
+    background-color: #F7F7F7;
+    width: 250px;
+    height: 50px;
+    padding: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    border: 1px solid #dddfe2;
+    box-sizing: border-box;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    width: 46.5vw;
+    height: 40px;
+    align-items: center;
+    text-align: center;
+    background-color: #517AA9;
+    color: white;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.app-views {
+    display: flex;
+    background-color: #F1F2F4;
+    flex-direction: row;
+    width: 46.5vw;
+    justify-content: space-between;
+}
+
+.app-views span {
+    width: 8vw !important;
+}
+
+#nav-link{
+    display: flex;
+    background-color: white;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 120px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#link {
+    text-decoration: none;
+    color: #517AA9;
+}
+#active-link {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-link.active-link {
+    background-color: #517AA9   ;
+}
+
+#nav-link.active-link:hover {
+    background-color: #517AA9;
+}
+
+#nav-link:hover {
+    cursor: pointer;
+    background-color: #829CBC;
+    text-decoration: none;
+    color: white;
+}
+
+#active-link {
+    text-decoration: none;
+    color: white;
+}
+.left-stud{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1150px) {
+    .student-page{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info{
+        flex-direction: row;
+        gap: 5%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-stud{
+        flex-direction: row;
+        gap: 5%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-header{
+        align-items: center;
+        width: 80vw;
+    }
+
+    .app-views{
+        align-items: center;
+        width: 80vw;
+        gap: 10px;
+    }
+
+    .app-views span{
+        width: 15vw !important;
+    }
+}
+
+
+#nav-link.active-link {
+    background-color: #829CBC;
+}
+
+#nav-link.active-link:hover {
+    background-color: #517AA9;
+}
+
+@media screen and (max-width: 1150px) {
+
+    .student-page{
+        width: 100vw;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-panel{
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        gap: 5%
+    }
+
+    .right-panel{
+        align-items: center;
+    }
+    
+}    
+
+#student-nav-button {
+    background-color: #517AA9;
+    display: flex;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+#student-nav-section {
+    display: flex;
+    gap: 10px;
+}
